@@ -48,6 +48,7 @@ Why this matters:
 Install for both tools:
 
 - `brainstorming`
+- `deep-research`
 - `writing-plans`
 - `executing-plans`
 - `systematic-debugging`
@@ -62,6 +63,7 @@ Skill sources:
 
 - `systematic-debugging`, `verification-before-completion`, `using-git-worktrees` come from [obra/superpowers](https://github.com/obra/superpowers)
 - `brainstorming`, `writing-plans`, `executing-plans` are adapted from practitioner planning patterns
+- `deep-research` is a cross-cutting synthesis workflow promoted from our Signal Scout research passes
 - `model-routing` is a Codex-native skill from [openai/skills](https://github.com/openai/skills)
 
 Install paths:
@@ -71,7 +73,7 @@ Install paths:
 
 Why this matters:
 
-- this gives planning, implementation discipline, debugging, verification, and safe parallel work
+- this gives planning, research synthesis, implementation discipline, debugging, verification, and safe parallel work
 
 ## 3. Claude Code safety defaults
 

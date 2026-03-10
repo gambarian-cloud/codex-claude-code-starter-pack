@@ -19,6 +19,7 @@ What the script checks:
 - Claude `settings.json`
 - Codex `config.toml`
 - all core skills in both tools
+- `presentations` in both tools
 - `model-routing` in Codex
 - `test-driven-development` for builder profiles
 - `react-best-practices` for the websites profile
@@ -47,6 +48,7 @@ If the script ends with `Starter Pack verification passed.`, the install is good
 ```powershell
 $coreSkills = @(
   "brainstorming",
+  "deep-research",
   "writing-plans",
   "executing-plans",
   "systematic-debugging",
@@ -58,6 +60,9 @@ foreach ($skill in $coreSkills) {
   "{0}  Claude {1}" -f ($(if (Test-Path "$env:USERPROFILE\.claude\skills\$skill\SKILL.md") { "OK" } else { "MISSING" })), $skill
   "{0}  Codex  {1}" -f ($(if (Test-Path "$env:USERPROFILE\.codex\skills\$skill\SKILL.md") { "OK" } else { "MISSING" })), $skill
 }
+
+"{0}  Claude presentations" -f ($(if (Test-Path "$env:USERPROFILE\.claude\skills\presentations\SKILL.md") { "OK" } else { "MISSING" }))
+"{0}  Codex  presentations" -f ($(if (Test-Path "$env:USERPROFILE\.codex\skills\presentations\SKILL.md") { "OK" } else { "MISSING" }))
 ```
 
 ### Check 3: profile extras

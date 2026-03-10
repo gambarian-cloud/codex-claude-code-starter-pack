@@ -1,5 +1,20 @@
 # Changelog
 
+## v0.6.5 - 2026-03-11
+
+Deep Research baseline pass.
+
+Added:
+
+- `skills/deep-research/SKILL.md` to the standalone public Starter Pack repo
+
+Changed:
+
+- core baseline now installs `deep-research` for both Codex and Claude Code
+- install and verify scripts now expect `deep-research`
+- docs and PRD now describe deep research as part of the workflow floor
+- `Code Review` was not added to Starter Pack
+
 ## v0.6.4 - 2026-03-11
 
 Presentation baseline pass.

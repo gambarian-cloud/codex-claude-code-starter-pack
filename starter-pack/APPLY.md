@@ -56,14 +56,15 @@ Available profiles:
 2. Copies the global instruction files from `assets/`.
 3. Installs the core skills from `skills/`.
 4. Adds `model-routing` for Codex.
-5. Adds `test-driven-development` for builder profiles.
-6. Adds `react-best-practices` for the websites profile.
-7. Merges Claude Code deny rules into `settings.json`.
-8. Updates Codex `config.toml` with the baseline MCP servers.
-9. Adds Claude MCP servers through the Claude CLI if the CLI is available.
-10. Saves backups to `%USERPROFILE%\.starter-pack\backups\...`.
-11. Writes an install receipt to `%USERPROFILE%\.starter-pack\install-receipt.json`.
-12. Runs `VERIFY.ps1` unless you skip it.
+5. Adds presentation help for both tools.
+6. Adds `test-driven-development` for builder profiles.
+7. Adds `react-best-practices` for the websites profile.
+8. Merges Claude Code deny rules into `settings.json`.
+9. Updates Codex `config.toml` with the baseline MCP servers.
+10. Adds Claude MCP servers through the Claude CLI if the CLI is available.
+11. Saves backups to `%USERPROFILE%\.starter-pack\backups\...`.
+12. Writes an install receipt to `%USERPROFILE%\.starter-pack\install-receipt.json`.
+13. Runs `VERIFY.ps1` unless you skip it.
 
 ### Optional flags
 
@@ -107,6 +108,7 @@ Copy-Item ".\assets\claude\CLAUDE.md" "$env:USERPROFILE\.claude\CLAUDE.md" -Forc
 Install these for both tools:
 
 - `brainstorming`
+- `deep-research`
 - `writing-plans`
 - `executing-plans`
 - `systematic-debugging`
@@ -138,6 +140,11 @@ foreach ($skill in $coreSkills) {
 
 New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.codex\skills\model-routing" | Out-Null
 Copy-Item ".\skills\model-routing\SKILL.md" "$env:USERPROFILE\.codex\skills\model-routing\SKILL.md" -Force
+
+New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.codex\skills\presentations" | Out-Null
+New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.claude\skills\presentations" | Out-Null
+Copy-Item ".\skills\presentations\SKILL.md" "$env:USERPROFILE\.codex\skills\presentations\SKILL.md" -Force
+Copy-Item ".\skills\presentations\SKILL.md" "$env:USERPROFILE\.claude\skills\presentations\SKILL.md" -Force
 ```
 
 ### Step 4: add Claude Code safety rules

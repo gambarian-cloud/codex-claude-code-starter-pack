@@ -1,4 +1,4 @@
-# GitHub Release Body - v0.6.4
+# GitHub Release Body - v0.6.5
 
 Starter Pack 2026 for Windows is a one-button beginner setup for Codex and Claude Code.
 
@@ -10,18 +10,18 @@ What a new user does:
 4. Wait for install
 5. Read the short next-step note that opens automatically
 
-What is new in v0.6.4:
+What is new in v0.6.5:
 
-- added a shared `presentations` skill for slide decks and simple presentations
-- kept sites, apps, browser checking, and deploy guidance in the default baseline
-- made presentations a first-class beginner path instead of an afterthought
+- added `deep-research` to the core baseline
+- kept `Code Review` out of Starter Pack
+- improved the workflow floor for beginners who need source comparison and stronger recommendations early
 
 Included in this release:
 
 - beginner click-to-install path
 - copy-paste path for Codex or Claude Code
-- baseline for first websites, apps, and presentations
-- React guidance, UI review guardrails, browser checking, deploy guidance, and presentation help
+- baseline for first websites, apps, presentations, and deep research
+- React guidance, UI review guardrails, browser checking, deploy guidance, presentation help, and deep research
 - verification and rollback helpers inside `starter-pack/`
 
 Recommended text for the release page:

@@ -24,6 +24,7 @@ Choose this profile if you want help with:
 
 - writing
 - planning
+- deep research
 - research
 - small coding tasks
 - general assistant use

@@ -39,6 +39,7 @@ $allGood = (Test-Check "Codex config.toml" { Test-Path (Join-Path $codexRoot "co
 
 $coreSkills = @(
   "brainstorming",
+  "deep-research",
   "writing-plans",
   "executing-plans",
   "systematic-debugging",

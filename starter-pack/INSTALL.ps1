@@ -8,7 +8,7 @@
 
 $ErrorActionPreference = "Stop"
 
-$script:StarterPackVersion = "0.6.4"
+$script:StarterPackVersion = "0.6.5"
 $script:StarterPackRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
 $script:AssetsRoot = Join-Path $script:StarterPackRoot "assets"
 $script:SkillsRoot = Join-Path $script:StarterPackRoot "skills"
@@ -310,6 +310,7 @@ $receipt.installedFiles += @{
 Write-Step "Installing core skills"
 $coreSkills = @(
   "brainstorming",
+  "deep-research",
   "writing-plans",
   "executing-plans",
   "systematic-debugging",

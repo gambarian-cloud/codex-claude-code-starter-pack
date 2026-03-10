@@ -58,7 +58,7 @@ The MVP does not include:
 The core baseline always includes:
 
 - global instruction files for `Codex` and `Claude Code`
-- core workflow skills for planning, implementation, debugging, verification, and safe parallel work
+- core workflow skills for planning, deep research, implementation, debugging, verification, and safe parallel work
 - Claude Code safety defaults for secrets
 - a small MCP layer:
   - `Context7`
@@ -132,7 +132,7 @@ This folder should contain:
 - `CHANGELOG.md`
 - `assets/codex/AGENTS.md` - template for Codex instruction file
 - `assets/claude/CLAUDE.md` - template for Claude Code instruction file
-- `skills/` - all bundled skill files (9 skills)
+- `skills/` - all bundled skill files (15 skills)
 - `manifests/core-baseline.md`
 - `manifests/builder-default.md`
 - `profiles/general-use.md`

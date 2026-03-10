@@ -73,7 +73,7 @@ Shared support files:
 ## What this includes
 
 - global instruction files for Codex and Claude Code
-- workflow skills for planning, execution, debugging, verification, and worktree discipline
+- workflow skills for planning, deep research, execution, debugging, verification, and worktree discipline
 - build-ready defaults for first websites and apps, plus presentation help, including React guidance, UI review, browser checking, and deploy guidance
 - Context7 MCP
 - Sequential Thinking MCP
@@ -103,10 +103,10 @@ After install, the product tells the user to:
 - `starter-pack/UNINSTALL.ps1` - rollback helper
 - `starter-pack/CHANGELOG.md` - version history
 - `starter-pack/PRD.md` - product spec
-- `GITHUB-RELEASE-BODY-v0.6.4.md` - ready release text
+- `GITHUB-RELEASE-BODY-v0.6.5.md` - ready release text
 - `FACEBOOK-POST.md` - ready social post text
 - `PUBLISH-CHECKLIST.md` - ready publish checklist
 
 ## Current version
 
-`v0.6.4`
+`v0.6.5`
