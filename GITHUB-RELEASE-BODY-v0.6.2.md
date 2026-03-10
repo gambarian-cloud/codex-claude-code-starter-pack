@@ -1,4 +1,4 @@
-# GitHub Release Body - v0.6.1
+# GitHub Release Body - v0.6.2
 
 Starter Pack 2026 for Windows is a one-button beginner setup for Codex and Claude Code.
 
@@ -10,19 +10,18 @@ What a new user does:
 4. Wait for install
 5. Read the short next-step note that opens automatically
 
-What is new in v0.6.1:
+What is new in v0.6.2:
 
-- one-button install flow
-- `Starter Pack 2026` branding
-- built-in on-screen next-step guidance during install
-- clean public root surface with no profile clutter
-- automatic post-install onboarding note
+- added `web-design-guidelines` to the default build-ready install
+- improved first-project support for website and app UI quality
+- updated verification and docs to match the stronger frontend-ready baseline
 
 Included in this release:
 
 - beginner click-to-install path
 - copy-paste path for Codex or Claude Code
 - build-ready baseline for first websites and apps
+- React guidance plus UI review guardrails
 - verification and rollback helpers inside `starter-pack/`
 
 Recommended text for the release page:

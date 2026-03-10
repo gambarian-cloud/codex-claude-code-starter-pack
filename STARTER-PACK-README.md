@@ -17,6 +17,13 @@ That is the whole install path.
 
 Open `PASTE-INTO-CODEX-OR-CLAUDE-INSTALL.txt`, copy the text, and paste it into the chat.
 
+## What the install now includes
+
+- calm baseline instructions for Codex and Claude Code
+- planning, implementation, debugging, verification, and worktree skills
+- build-ready skills for first sites and apps
+- basic UI review guidance so the first website is not just functional, but easier to use
+
 ## What the user sees in the ZIP root
 
 - `OPEN-THIS-FIRST.txt`

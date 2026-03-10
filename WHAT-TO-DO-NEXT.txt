@@ -17,6 +17,7 @@ This matters: the agent works inside the folder you opened.
 - Plan and build me a simple app for tracking tasks. Start with a plan, then build it step by step.
 - Make me a simple landing page. Explain what you are doing in plain language.
 - Make me a small app and show me how to run, preview, and publish it.
+- Build me a simple website, then review the UI and improve anything confusing, ugly, or hard to use.
 
 5. Do not worry about code.
 You can ask in normal language.
@@ -25,4 +26,4 @@ Good first rule:
 Ask the agent to plan first, then build.
 
 Example:
-Plan a simple website for my tutoring business. Then build it step by step, show me how to preview it, and help me publish it.
+Plan a simple website for my tutoring business. Then build it step by step, review the UI, show me how to preview it, and help me publish it.

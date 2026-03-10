@@ -56,6 +56,8 @@ $allGood = (Test-Check "Codex skill model-routing" { Test-Path (Join-Path $codex
 if ($Profile -in @("websites", "simple-apps")) {
   $allGood = (Test-Check "Codex skill test-driven-development" { Test-Path (Join-Path $codexRoot "skills\test-driven-development\SKILL.md") }) -and $allGood
   $allGood = (Test-Check "Claude skill test-driven-development" { Test-Path (Join-Path $claudeRoot "skills\test-driven-development\SKILL.md") }) -and $allGood
+  $allGood = (Test-Check "Codex skill web-design-guidelines" { Test-Path (Join-Path $codexRoot "skills\web-design-guidelines\SKILL.md") }) -and $allGood
+  $allGood = (Test-Check "Claude skill web-design-guidelines" { Test-Path (Join-Path $claudeRoot "skills\web-design-guidelines\SKILL.md") }) -and $allGood
 }
 
 if ($Profile -eq "websites") {

@@ -34,7 +34,7 @@ That prompt tells the agent to find the local installer, run it, run verificatio
 |------|-------------|
 | Global instruction files | Short behavior rules that make both tools calmer and more structured |
 | Workflow skills | Planning, implementation, debugging, verification, and worktree discipline |
-| Build-ready skills | Core help for first websites and apps |
+| Build-ready skills | Core help for first websites and apps, including React guidance and UI review guardrails |
 | Safety deny rules | Blocks Claude Code from casually reading common secret locations |
 | Context7 MCP | Up-to-date library docs on demand |
 | Sequential Thinking MCP | Step-by-step reasoning for hard problems |
@@ -77,5 +77,6 @@ starter-pack/
     using-git-worktrees/
     model-routing/
     test-driven-development/
+    web-design-guidelines/
     react-best-practices/
 ```

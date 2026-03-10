@@ -1,5 +1,18 @@
 # Changelog
 
+## v0.6.2 - 2026-03-10
+
+Frontend/design baseline pass.
+
+Added:
+
+- `web-design-guidelines` to the build-ready install flow for websites and simple apps
+
+Changed:
+
+- verification now checks for the new UI/design skill
+- beginner docs now explain that the default install includes UI review guidance, not only code-writing help
+
 ## v0.6.1 - 2026-03-10
 
 One-button beginner install pass.

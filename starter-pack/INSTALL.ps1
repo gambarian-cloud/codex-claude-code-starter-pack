@@ -8,7 +8,7 @@
 
 $ErrorActionPreference = "Stop"
 
-$script:StarterPackVersion = "0.6.1"
+$script:StarterPackVersion = "0.6.2"
 $script:StarterPackRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
 $script:AssetsRoot = Join-Path $script:StarterPackRoot "assets"
 $script:SkillsRoot = Join-Path $script:StarterPackRoot "skills"
@@ -343,7 +343,7 @@ $receipt.installedSkills += @{
 }
 
 if ($Profile -in @("websites", "simple-apps")) {
-  Write-Step "Installing builder skill"
+  Write-Step "Installing builder skills"
   $receipt.installedSkills += @{
     kind = "directory"
     tool = "codex"
@@ -358,10 +358,24 @@ if ($Profile -in @("websites", "simple-apps")) {
     target = (Join-Path $claudeSkills "test-driven-development")
     backup = (Copy-SkillFolder -SkillName "test-driven-development" -DestinationBase $claudeSkills -BackupBase $backupPath)
   }
+  $receipt.installedSkills += @{
+    kind = "directory"
+    tool = "codex"
+    name = "web-design-guidelines"
+    target = (Join-Path $codexSkills "web-design-guidelines")
+    backup = (Copy-SkillFolder -SkillName "web-design-guidelines" -DestinationBase $codexSkills -BackupBase $backupPath)
+  }
+  $receipt.installedSkills += @{
+    kind = "directory"
+    tool = "claude"
+    name = "web-design-guidelines"
+    target = (Join-Path $claudeSkills "web-design-guidelines")
+    backup = (Copy-SkillFolder -SkillName "web-design-guidelines" -DestinationBase $claudeSkills -BackupBase $backupPath)
+  }
 }
 
 if ($Profile -eq "websites") {
-  Write-Step "Installing website skill"
+  Write-Step "Installing website-specific skill"
   $receipt.installedSkills += @{
     kind = "directory"
     tool = "codex"
