@@ -13,8 +13,8 @@ if (-not $versionMatch.Matches.Count) {
 }
 
 $version = $versionMatch.Matches[0].Groups[1].Value
-$stageRoot = Join-Path $OutputDirectory "Starter-Pack-Windows-v$version"
-$zipPath = Join-Path $OutputDirectory "Starter-Pack-Windows-v$version.zip"
+$stageRoot = Join-Path $OutputDirectory "Codex-Claude-Code-Starter-Pack-Windows-v$version"
+$zipPath = Join-Path $OutputDirectory "Codex-Claude-Code-Starter-Pack-Windows-v$version.zip"
 
 if (Test-Path $stageRoot) {
   Remove-Item -Recurse -Force $stageRoot

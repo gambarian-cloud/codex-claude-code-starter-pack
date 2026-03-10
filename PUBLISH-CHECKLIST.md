@@ -11,7 +11,7 @@
 
 - create tag `v0.6.1`
 - create a GitHub Release
-- attach `Starter-Pack-Windows-v0.6.1.zip`
+- attach `Codex-Claude-Code-Starter-Pack-Windows-v0.6.1.zip`
 - paste text from `GITHUB-RELEASE-BODY-v0.6.1.md`
 - mark the release as latest
 

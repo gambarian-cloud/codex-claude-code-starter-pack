@@ -4,7 +4,7 @@ $repoRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
 Set-Location $repoRoot
 
 $owner = "gambarian-cloud"
-$repoName = "starter-pack-windows"
+$repoName = "codex-claude-code-starter-pack"
 $remoteUrl = "https://github.com/$owner/$repoName.git"
 
 $token = if ($env:GITHUB_PERSONAL_ACCESS_TOKEN) {

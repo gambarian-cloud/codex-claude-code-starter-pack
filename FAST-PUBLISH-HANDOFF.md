@@ -1,13 +1,17 @@
 # Fast Publish Handoff
 
-The GitHub token available in this environment does not have permission to create a repository through the API.
+The public GitHub repo already exists:
+
+`https://github.com/gambarian-cloud/codex-claude-code-starter-pack`
+
+The GitHub token available in this environment may still fail on direct push, depending on repo permissions.
 The product itself is ready.
 
 ## Fastest path now
 
-1. Double-click `OPEN-GITHUB-CREATE-REPO.url`
-2. Create the public repo `starter-pack-windows` under `gambarian-cloud`
-3. Come back here and double-click `PUBLISH-TO-GITHUB.cmd`
+1. Open the public repo `codex-claude-code-starter-pack` under `gambarian-cloud`
+2. If git push is denied here, upload changed files through the GitHub web UI
+3. Otherwise, come back here and run `PUBLISH-TO-GITHUB.cmd`
 4. Create a GitHub Release for tag `v0.6.1`
 5. Attach the ZIP built from `starter-pack/` or use the prepared release text from `GITHUB-RELEASE-BODY-v0.6.1.md`
 
