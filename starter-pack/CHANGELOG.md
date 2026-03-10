@@ -1,5 +1,19 @@
 # Changelog
 
+## v0.6.3 - 2026-03-11
+
+Browser and deploy baseline pass.
+
+Added:
+
+- `playwright` to the build-ready install flow for websites and simple apps
+- `vercel-deploy` to the build-ready install flow for websites and simple apps
+
+Changed:
+
+- verification now checks browser and deploy skills in the build-ready layer
+- beginner docs now say the starter pack can help preview, browser-check, and publish a first project
+
 ## v0.6.2 - 2026-03-10
 
 Frontend/design baseline pass.

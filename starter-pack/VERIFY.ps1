@@ -58,6 +58,10 @@ if ($Profile -in @("websites", "simple-apps")) {
   $allGood = (Test-Check "Claude skill test-driven-development" { Test-Path (Join-Path $claudeRoot "skills\test-driven-development\SKILL.md") }) -and $allGood
   $allGood = (Test-Check "Codex skill web-design-guidelines" { Test-Path (Join-Path $codexRoot "skills\web-design-guidelines\SKILL.md") }) -and $allGood
   $allGood = (Test-Check "Claude skill web-design-guidelines" { Test-Path (Join-Path $claudeRoot "skills\web-design-guidelines\SKILL.md") }) -and $allGood
+  $allGood = (Test-Check "Codex skill playwright" { Test-Path (Join-Path $codexRoot "skills\playwright\SKILL.md") }) -and $allGood
+  $allGood = (Test-Check "Claude skill playwright" { Test-Path (Join-Path $claudeRoot "skills\playwright\SKILL.md") }) -and $allGood
+  $allGood = (Test-Check "Codex skill vercel-deploy" { Test-Path (Join-Path $codexRoot "skills\vercel-deploy\SKILL.md") }) -and $allGood
+  $allGood = (Test-Check "Claude skill vercel-deploy" { Test-Path (Join-Path $claudeRoot "skills\vercel-deploy\SKILL.md") }) -and $allGood
 }
 
 if ($Profile -eq "websites") {

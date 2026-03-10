@@ -8,7 +8,7 @@
 
 $ErrorActionPreference = "Stop"
 
-$script:StarterPackVersion = "0.6.2"
+$script:StarterPackVersion = "0.6.3"
 $script:StarterPackRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
 $script:AssetsRoot = Join-Path $script:StarterPackRoot "assets"
 $script:SkillsRoot = Join-Path $script:StarterPackRoot "skills"
@@ -371,6 +371,34 @@ if ($Profile -in @("websites", "simple-apps")) {
     name = "web-design-guidelines"
     target = (Join-Path $claudeSkills "web-design-guidelines")
     backup = (Copy-SkillFolder -SkillName "web-design-guidelines" -DestinationBase $claudeSkills -BackupBase $backupPath)
+  }
+  $receipt.installedSkills += @{
+    kind = "directory"
+    tool = "codex"
+    name = "playwright"
+    target = (Join-Path $codexSkills "playwright")
+    backup = (Copy-SkillFolder -SkillName "playwright" -DestinationBase $codexSkills -BackupBase $backupPath)
+  }
+  $receipt.installedSkills += @{
+    kind = "directory"
+    tool = "claude"
+    name = "playwright"
+    target = (Join-Path $claudeSkills "playwright")
+    backup = (Copy-SkillFolder -SkillName "playwright" -DestinationBase $claudeSkills -BackupBase $backupPath)
+  }
+  $receipt.installedSkills += @{
+    kind = "directory"
+    tool = "codex"
+    name = "vercel-deploy"
+    target = (Join-Path $codexSkills "vercel-deploy")
+    backup = (Copy-SkillFolder -SkillName "vercel-deploy" -DestinationBase $codexSkills -BackupBase $backupPath)
+  }
+  $receipt.installedSkills += @{
+    kind = "directory"
+    tool = "claude"
+    name = "vercel-deploy"
+    target = (Join-Path $claudeSkills "vercel-deploy")
+    backup = (Copy-SkillFolder -SkillName "vercel-deploy" -DestinationBase $claudeSkills -BackupBase $backupPath)
   }
 }
 
