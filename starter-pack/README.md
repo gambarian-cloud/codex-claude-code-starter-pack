@@ -16,7 +16,7 @@ If the person downloaded this ZIP from GitHub:
 4. Let the installer run.
 5. Read [WHAT-TO-DO-NEXT.txt](../WHAT-TO-DO-NEXT.txt) when it opens.
 
-This default path is aimed at the first thing most people want: ask for a site, app, landing page, or first small project.
+This default path is aimed at the first thing most people want: ask for a site, app, landing page, presentation, or first small project.
 
 ### Option 2: already inside Codex or Claude Code
 
@@ -34,7 +34,7 @@ That prompt tells the agent to find the local installer, run it, run verificatio
 |------|-------------|
 | Global instruction files | Short behavior rules that make both tools calmer and more structured |
 | Workflow skills | Planning, implementation, debugging, verification, and worktree discipline |
-| Build-ready skills | Core help for first websites and apps, including React guidance, UI review, browser checking, and deploy guidance |
+| Creation skills | Presentation help plus core support for first websites and apps, including React guidance, UI review, browser checking, and deploy guidance |
 | Safety deny rules | Blocks Claude Code from casually reading common secret locations |
 | Context7 MCP | Up-to-date library docs on demand |
 | Sequential Thinking MCP | Step-by-step reasoning for hard problems |
@@ -75,6 +75,7 @@ starter-pack/
     systematic-debugging/
     verification-before-completion/
     using-git-worktrees/
+    presentations/
     model-routing/
     test-driven-development/
     web-design-guidelines/

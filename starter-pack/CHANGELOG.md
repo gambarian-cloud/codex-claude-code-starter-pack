@@ -1,5 +1,19 @@
 # Changelog
 
+## v0.6.4 - 2026-03-11
+
+Presentation baseline pass.
+
+Added:
+
+- shared `presentations` skill for Codex and Claude Code
+
+Changed:
+
+- installer now includes presentation help in the default baseline
+- verification now checks the presentation skill
+- docs now describe presentations as a first-class beginner use case, alongside sites and apps
+
 ## v0.6.3 - 2026-03-11
 
 Browser and deploy baseline pass.

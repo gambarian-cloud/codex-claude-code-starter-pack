@@ -1,4 +1,4 @@
-# GitHub Release Body - v0.6.3
+# GitHub Release Body - v0.6.4
 
 Starter Pack 2026 for Windows is a one-button beginner setup for Codex and Claude Code.
 
@@ -10,18 +10,18 @@ What a new user does:
 4. Wait for install
 5. Read the short next-step note that opens automatically
 
-What is new in v0.6.3:
+What is new in v0.6.4:
 
-- added `playwright` so the agent can check a real site or app in a browser
-- added `vercel-deploy` so the agent can help preview or publish a first project
-- kept the beginner path as one button, while making the default baseline more first-project-ready
+- added a shared `presentations` skill for slide decks and simple presentations
+- kept sites, apps, browser checking, and deploy guidance in the default baseline
+- made presentations a first-class beginner path instead of an afterthought
 
 Included in this release:
 
 - beginner click-to-install path
 - copy-paste path for Codex or Claude Code
-- build-ready baseline for first websites and apps
-- React guidance, UI review guardrails, browser checking, and deploy guidance
+- baseline for first websites, apps, and presentations
+- React guidance, UI review guardrails, browser checking, deploy guidance, and presentation help
 - verification and rollback helpers inside `starter-pack/`
 
 Recommended text for the release page:

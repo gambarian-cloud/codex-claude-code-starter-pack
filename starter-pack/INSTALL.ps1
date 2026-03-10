@@ -8,7 +8,7 @@
 
 $ErrorActionPreference = "Stop"
 
-$script:StarterPackVersion = "0.6.3"
+$script:StarterPackVersion = "0.6.4"
 $script:StarterPackRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
 $script:AssetsRoot = Join-Path $script:StarterPackRoot "assets"
 $script:SkillsRoot = Join-Path $script:StarterPackRoot "skills"
@@ -332,6 +332,22 @@ foreach ($skill in $coreSkills) {
     target = (Join-Path $claudeSkills $skill)
     backup = (Copy-SkillFolder -SkillName $skill -DestinationBase $claudeSkills -BackupBase $backupPath)
   }
+}
+
+Write-Step "Installing presentation skill"
+$receipt.installedSkills += @{
+  kind = "directory"
+  tool = "codex"
+  name = "presentations"
+  target = (Join-Path $codexSkills "presentations")
+  backup = (Copy-SkillFolder -SkillName "presentations" -DestinationBase $codexSkills -BackupBase $backupPath)
+}
+$receipt.installedSkills += @{
+  kind = "directory"
+  tool = "claude"
+  name = "presentations"
+  target = (Join-Path $claudeSkills "presentations")
+  backup = (Copy-SkillFolder -SkillName "presentations" -DestinationBase $claudeSkills -BackupBase $backupPath)
 }
 
 $receipt.installedSkills += @{

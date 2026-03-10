@@ -52,6 +52,8 @@ foreach ($skill in $coreSkills) {
 }
 
 $allGood = (Test-Check "Codex skill model-routing" { Test-Path (Join-Path $codexRoot "skills\model-routing\SKILL.md") }) -and $allGood
+$allGood = (Test-Check "Codex skill presentations" { Test-Path (Join-Path $codexRoot "skills\presentations\SKILL.md") }) -and $allGood
+$allGood = (Test-Check "Claude skill presentations" { Test-Path (Join-Path $claudeRoot "skills\presentations\SKILL.md") }) -and $allGood
 
 if ($Profile -in @("websites", "simple-apps")) {
   $allGood = (Test-Check "Codex skill test-driven-development" { Test-Path (Join-Path $codexRoot "skills\test-driven-development\SKILL.md") }) -and $allGood

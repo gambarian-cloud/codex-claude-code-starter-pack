@@ -11,6 +11,7 @@ Starter Pack installs a calm, build-ready baseline so a new user can open Codex 
 
 - Build me a simple website
 - Build me a simple app
+- Make me a short presentation for my class or business
 - Make me a landing page for my business
 - Help me plan and build my first project step by step
 
@@ -73,7 +74,7 @@ Shared support files:
 
 - global instruction files for Codex and Claude Code
 - workflow skills for planning, execution, debugging, verification, and worktree discipline
-- build-ready defaults for first websites and apps, including React guidance, UI review, browser checking, and deploy guidance
+- build-ready defaults for first websites and apps, plus presentation help, including React guidance, UI review, browser checking, and deploy guidance
 - Context7 MCP
 - Sequential Thinking MCP
 - optional GitHub read-only MCP
@@ -92,7 +93,7 @@ After install, the product tells the user to:
 
 1. Make one folder for the first project
 2. Open that folder in Codex or Claude Code
-3. Ask in normal language for a site or app
+3. Ask in normal language for a site, app, or presentation
 4. Ask the agent to plan first, then build step by step
 
 ## Files for maintainers
@@ -102,10 +103,10 @@ After install, the product tells the user to:
 - `starter-pack/UNINSTALL.ps1` - rollback helper
 - `starter-pack/CHANGELOG.md` - version history
 - `starter-pack/PRD.md` - product spec
-- `GITHUB-RELEASE-BODY-v0.6.3.md` - ready release text
+- `GITHUB-RELEASE-BODY-v0.6.4.md` - ready release text
 - `FACEBOOK-POST.md` - ready social post text
 - `PUBLISH-CHECKLIST.md` - ready publish checklist
 
 ## Current version
 
-`v0.6.3`
+`v0.6.4`

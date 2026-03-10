@@ -21,6 +21,7 @@ Open `PASTE-INTO-CODEX-OR-CLAUDE-INSTALL.txt`, copy the text, and paste it into 
 
 - calm baseline instructions for Codex and Claude Code
 - planning, implementation, debugging, verification, and worktree skills
+- presentation help for classroom, business, and simple personal decks
 - build-ready skills for first sites and apps
 - basic UI review guidance so the first website is not just functional, but easier to use
 - browser-check guidance so the agent can actually look at the running result
