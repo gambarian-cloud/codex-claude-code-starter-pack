@@ -1,0 +1,28 @@
+Now that Starter Pack is installed, do this next.
+
+1. Make one folder for your first project.
+Example names:
+- My First Site
+- My School App
+- My Business Website
+- My Family Organizer
+
+2. Open Codex or Claude Code.
+
+3. Open that one folder as your working folder.
+This matters: the agent works inside the folder you opened.
+
+4. Then say one of these:
+- Plan and build me a simple website for my business. Start with a plan, then build it step by step.
+- Plan and build me a simple app for tracking tasks. Start with a plan, then build it step by step.
+- Make me a simple landing page. Explain what you are doing in plain language.
+- Make me a small app and show me how to run, preview, and publish it.
+
+5. Do not worry about code.
+You can ask in normal language.
+
+Good first rule:
+Ask the agent to plan first, then build.
+
+Example:
+Plan a simple website for my tutoring business. Then build it step by step, show me how to preview it, and help me publish it.
