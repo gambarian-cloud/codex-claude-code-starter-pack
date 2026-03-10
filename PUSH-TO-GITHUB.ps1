@@ -33,4 +33,8 @@ if (-not $originExists) {
 
 git -c http.extraheader="AUTHORIZATION: basic $basic" push -u origin main --tags
 
+if ($LASTEXITCODE -ne 0) {
+  throw "Git push failed. The repository was not published."
+}
+
 Write-Host "Published to $remoteUrl" -ForegroundColor Green
