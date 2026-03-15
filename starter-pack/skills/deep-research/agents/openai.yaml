@@ -1,0 +1,4 @@
+interface:
+  display_name: Deep Research
+  short_description: Decision-grade multi-source research with counter-evidence, contradiction handling, and long-run artifact discipline.
+  default_prompt: Use deep research to produce a source-backed memo that separates official truth, implementation evidence, field evidence, and adversarial evidence, maps the serious options, tests the leading conclusion with counter-evidence, and ends with an auditable recommendation plus the strongest objection.
