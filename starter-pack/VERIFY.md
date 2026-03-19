@@ -21,7 +21,7 @@ What the script checks:
 - all core skills in both tools
 - `presentations` in both tools
 - `model-routing` in Codex
-- `test-driven-development` for builder profiles
+- `test-driven-development`, `frontend-design`, `design-elevation`, `web-design-guidelines`, `playwright`, and `vercel-deploy` for builder profiles
 - `react-best-practices` for the websites profile
 - Codex MCP blocks for Context7, Sequential Thinking, and GitHub
 - Claude MCP names if the Claude CLI is available
@@ -72,6 +72,16 @@ Builder profiles should also have:
 ```powershell
 Test-Path "$env:USERPROFILE\.codex\skills\test-driven-development\SKILL.md"
 Test-Path "$env:USERPROFILE\.claude\skills\test-driven-development\SKILL.md"
+Test-Path "$env:USERPROFILE\.codex\skills\frontend-design\SKILL.md"
+Test-Path "$env:USERPROFILE\.claude\skills\frontend-design\SKILL.md"
+Test-Path "$env:USERPROFILE\.codex\skills\design-elevation\SKILL.md"
+Test-Path "$env:USERPROFILE\.claude\skills\design-elevation\SKILL.md"
+Test-Path "$env:USERPROFILE\.codex\skills\web-design-guidelines\SKILL.md"
+Test-Path "$env:USERPROFILE\.claude\skills\web-design-guidelines\SKILL.md"
+Test-Path "$env:USERPROFILE\.codex\skills\playwright\SKILL.md"
+Test-Path "$env:USERPROFILE\.claude\skills\playwright\SKILL.md"
+Test-Path "$env:USERPROFILE\.codex\skills\vercel-deploy\SKILL.md"
+Test-Path "$env:USERPROFILE\.claude\skills\vercel-deploy\SKILL.md"
 ```
 
 The websites profile should also have:
@@ -106,6 +116,7 @@ Open one of the tools and ask a simple question that should touch the installed 
 
 - Claude Code: `What does the brainstorming skill tell you to do first?`
 - Codex: `Which model should I use for a refactor?`
+- Either tool: `Build me a simple website. Start with a plan, use frontend-design for the first version, then do a design-elevation pass before finalizing it.`
 
 If the answer never mentions the installed skill, the files may be in the wrong folder.
 

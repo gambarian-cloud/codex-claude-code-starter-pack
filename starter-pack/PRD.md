@@ -85,6 +85,7 @@ Current profile shape:
 
 - `General Use` can stop at core
 - builders use `builder-default` first, then choose `Building Websites` or `Building Simple Apps`
+- the builder layer should already include strong first-pass design direction, design elevation, UI review, browser checking, and deploy guidance
 
 Later profile families to test, not ship as stable defaults yet:
 
@@ -132,7 +133,7 @@ This folder should contain:
 - `CHANGELOG.md`
 - `assets/codex/AGENTS.md` - template for Codex instruction file
 - `assets/claude/CLAUDE.md` - template for Claude Code instruction file
-- `skills/` - all bundled skill files (15 skills)
+- `skills/` - all bundled skill files (17 skills)
 - `manifests/core-baseline.md`
 - `manifests/builder-default.md`
 - `profiles/general-use.md`

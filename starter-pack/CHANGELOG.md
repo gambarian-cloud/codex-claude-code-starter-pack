@@ -1,5 +1,21 @@
 # Changelog
 
+## v0.6.6 - 2026-03-19
+
+Design elevation baseline pass.
+
+Added:
+
+- shared `design-elevation` skill for Codex and Claude Code
+- shared `frontend-design` skill to the standalone public Starter Pack repo
+
+Changed:
+
+- builder install flow now includes `frontend-design` and `design-elevation` for both websites and simple apps
+- verification now checks both new design skills
+- docs now explain the difference between first-pass frontend direction and second-pass design elevation
+- onboarding examples now show how to ask for a plan, a first pass, and an elevation pass in one request
+
 ## v0.6.5 - 2026-03-11
 
 Deep Research baseline pass.

@@ -57,7 +57,7 @@ Available profiles:
 3. Installs the core skills from `skills/`.
 4. Adds `model-routing` for Codex.
 5. Adds presentation help for both tools.
-6. Adds `test-driven-development` for builder profiles.
+6. Adds `test-driven-development`, `frontend-design`, `design-elevation`, `web-design-guidelines`, `playwright`, and `vercel-deploy` for builder profiles.
 7. Adds `react-best-practices` for the websites profile.
 8. Merges Claude Code deny rules into `settings.json`.
 9. Updates Codex `config.toml` with the baseline MCP servers.
@@ -124,6 +124,7 @@ Helper script:
 ```powershell
 $coreSkills = @(
   "brainstorming",
+  "deep-research",
   "writing-plans",
   "executing-plans",
   "systematic-debugging",
@@ -211,8 +212,8 @@ Claude Code expands `${GITHUB_PERSONAL_ACCESS_TOKEN}` from your environment when
 Choose one:
 
 - [General Use](profiles/general-use.md) - no extra install beyond core
-- [Building Websites](profiles/websites.md) - add `test-driven-development`, then `react-best-practices` if you are actively building React or Next.js
-- [Building Simple Apps](profiles/simple-apps.md) - add `test-driven-development`
+- [Building Websites](profiles/websites.md) - add the builder design stack, then `react-best-practices` if you are actively building React or Next.js
+- [Building Simple Apps](profiles/simple-apps.md) - add the builder design stack
 
 Profile skill copy examples:
 
@@ -221,6 +222,31 @@ New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.codex\skills\test-d
 New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.claude\skills\test-driven-development" | Out-Null
 Copy-Item ".\skills\test-driven-development\SKILL.md" "$env:USERPROFILE\.codex\skills\test-driven-development\SKILL.md" -Force
 Copy-Item ".\skills\test-driven-development\SKILL.md" "$env:USERPROFILE\.claude\skills\test-driven-development\SKILL.md" -Force
+
+New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.codex\skills\frontend-design" | Out-Null
+New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.claude\skills\frontend-design" | Out-Null
+Copy-Item ".\skills\frontend-design\SKILL.md" "$env:USERPROFILE\.codex\skills\frontend-design\SKILL.md" -Force
+Copy-Item ".\skills\frontend-design\SKILL.md" "$env:USERPROFILE\.claude\skills\frontend-design\SKILL.md" -Force
+
+New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.codex\skills\design-elevation" | Out-Null
+New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.claude\skills\design-elevation" | Out-Null
+Copy-Item ".\skills\design-elevation" "$env:USERPROFILE\.codex\skills" -Recurse -Force
+Copy-Item ".\skills\design-elevation" "$env:USERPROFILE\.claude\skills" -Recurse -Force
+
+New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.codex\skills\web-design-guidelines" | Out-Null
+New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.claude\skills\web-design-guidelines" | Out-Null
+Copy-Item ".\skills\web-design-guidelines\SKILL.md" "$env:USERPROFILE\.codex\skills\web-design-guidelines\SKILL.md" -Force
+Copy-Item ".\skills\web-design-guidelines\SKILL.md" "$env:USERPROFILE\.claude\skills\web-design-guidelines\SKILL.md" -Force
+
+New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.codex\skills\playwright" | Out-Null
+New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.claude\skills\playwright" | Out-Null
+Copy-Item ".\skills\playwright\SKILL.md" "$env:USERPROFILE\.codex\skills\playwright\SKILL.md" -Force
+Copy-Item ".\skills\playwright\SKILL.md" "$env:USERPROFILE\.claude\skills\playwright\SKILL.md" -Force
+
+New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.codex\skills\vercel-deploy" | Out-Null
+New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.claude\skills\vercel-deploy" | Out-Null
+Copy-Item ".\skills\vercel-deploy\SKILL.md" "$env:USERPROFILE\.codex\skills\vercel-deploy\SKILL.md" -Force
+Copy-Item ".\skills\vercel-deploy\SKILL.md" "$env:USERPROFILE\.claude\skills\vercel-deploy\SKILL.md" -Force
 ```
 
 For the websites profile only:

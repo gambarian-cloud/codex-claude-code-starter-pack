@@ -24,14 +24,18 @@ Start from the core baseline in [core-baseline.md](core-baseline.md).
 Then add the default builder extras:
 
 - install `test-driven-development` as the default build skill once you start building real features
+- install `frontend-design` so the first build starts from a strong visual direction instead of generic defaults
+- install `design-elevation` so the agent refines a working draft before stopping
+- install `web-design-guidelines` to keep the UI readable and usable
+- install `playwright` so the agent can check the real browser result
+- install `vercel-deploy` so the agent can help preview or publish a first project
 - keep the stack small until the first working version exists
-- prefer one focused build skill over a giant pack
-- add website or app specialization only when the project clearly needs it
+- add website specialization only when the project clearly needs React or Next.js guidance
 
 Why this concrete addition matters:
 
 - builders need one tool that encourages small verified steps
-- `test-driven-development` is the strongest local candidate we already track for safer implementation work
+- builders also need one design-direction skill and one design-refinement skill, otherwise the first site or app often stays functional but generic
 
 ## Builder skill expectations
 
@@ -52,6 +56,11 @@ The builder layer then combines:
 - `verification-before-completion`
 - `using-git-worktrees`
 - `test-driven-development`
+- `frontend-design`
+- `design-elevation`
+- `web-design-guidelines`
+- `playwright`
+- `vercel-deploy`
 
 ## Next choice after this layer
 
@@ -62,7 +71,7 @@ Then choose one:
 
 ## Not included by default
 
-- large frontend packs
-- advanced deployment stacks
+- giant frontend packs
+- framework-heavy stacks the user did not ask for
 - orchestration-heavy app builders
 - extra MCP servers without a clear project reason

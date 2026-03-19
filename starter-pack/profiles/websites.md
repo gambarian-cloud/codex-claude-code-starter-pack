@@ -5,8 +5,8 @@ This profile is for a beginner who mainly wants to build websites or simple web 
 ## What this profile adds
 
 - website-focused guidance on top of the core baseline
-- one concrete frontend-oriented skill recommendation when the project actually needs it
-- a reminder to keep design and browser tooling small at first
+- React-specific guidance on top of the builder layer
+- a reminder to keep the framework stack focused even when the design layer is already installed
 
 Concrete profile item:
 
@@ -26,9 +26,10 @@ Why this profile exists:
 1. Apply the core baseline from [core-baseline.md](../manifests/core-baseline.md).
 2. Apply the builder layer from [builder-default.md](../manifests/builder-default.md).
 3. Keep the MCP baseline small. Do not add extra MCP servers unless the project clearly needs them.
-4. Add `react-best-practices` only if you are actively building a React or Next.js UI.
-5. Prefer one focused React or Next.js skill over a giant frontend bundle.
-6. Run [VERIFY.md](../VERIFY.md).
+4. Use the builder design stack first: `frontend-design` for the first pass, `design-elevation` for refinement, `web-design-guidelines` for usability checks, `playwright` for real browser review, and `vercel-deploy` for preview or publish help.
+5. Add `react-best-practices` only if you are actively building a React or Next.js UI.
+6. Prefer one focused React or Next.js skill over a giant frontend bundle.
+7. Run [VERIFY.md](../VERIFY.md).
 
 ## Good fit
 
@@ -43,4 +44,4 @@ Choose this profile if you want help with:
 
 - full design systems
 - large frontend skill collections
-- browser automation stacks unless you already need UI testing
+- broad framework extras beyond the current stack

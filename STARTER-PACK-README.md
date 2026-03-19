@@ -23,6 +23,8 @@ Open `PASTE-INTO-CODEX-OR-CLAUDE-INSTALL.txt`, copy the text, and paste it into 
 - planning, deep research, implementation, debugging, verification, and worktree skills
 - presentation help for classroom, business, and simple personal decks
 - build-ready skills for first sites and apps
+- bold frontend direction so the first version does not start from generic AI aesthetics
+- design elevation so a working first draft gets a real refinement pass before you stop
 - basic UI review guidance so the first website is not just functional, but easier to use
 - browser-check guidance so the agent can actually look at the running result
 - deploy guidance so the agent can help preview or publish the project

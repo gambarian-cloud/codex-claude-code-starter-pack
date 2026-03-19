@@ -5,6 +5,7 @@ This profile is for a beginner who wants to build small apps without jumping int
 ## What this profile adds
 
 - app-oriented guidance on top of the core baseline
+- the builder design and browser stack for user-facing app work
 - one concrete implementation-quality recommendation
 - a recommendation to keep the stack small and understandable
 - a reminder to verify often instead of adding more tools
@@ -26,10 +27,11 @@ Why this profile exists:
 
 1. Apply the core baseline from [core-baseline.md](../manifests/core-baseline.md).
 2. Apply the builder layer from [builder-default.md](../manifests/builder-default.md).
-3. Keep the MCP baseline at the default set unless you hit a real blocker.
-4. Add `test-driven-development` when the app has enough behavior to benefit from tests.
-5. Prefer small verified steps over broad setup work.
-6. Run [VERIFY.md](../VERIFY.md).
+3. Use the builder design stack first: `frontend-design` for the first pass, `design-elevation` for refinement, `web-design-guidelines` for usability checks, `playwright` for real browser review, and `vercel-deploy` for preview or publish help.
+4. Keep the MCP baseline at the default set unless you hit a real blocker.
+5. Add `test-driven-development` when the app has enough behavior to benefit from tests.
+6. Prefer small verified steps over broad setup work.
+7. Run [VERIFY.md](../VERIFY.md).
 
 ## Good fit
 

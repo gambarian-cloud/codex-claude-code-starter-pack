@@ -8,7 +8,7 @@
 
 $ErrorActionPreference = "Stop"
 
-$script:StarterPackVersion = "0.6.5"
+$script:StarterPackVersion = "0.6.6"
 $script:StarterPackRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
 $script:AssetsRoot = Join-Path $script:StarterPackRoot "assets"
 $script:SkillsRoot = Join-Path $script:StarterPackRoot "skills"
@@ -388,6 +388,34 @@ if ($Profile -in @("websites", "simple-apps")) {
     name = "web-design-guidelines"
     target = (Join-Path $claudeSkills "web-design-guidelines")
     backup = (Copy-SkillFolder -SkillName "web-design-guidelines" -DestinationBase $claudeSkills -BackupBase $backupPath)
+  }
+  $receipt.installedSkills += @{
+    kind = "directory"
+    tool = "codex"
+    name = "frontend-design"
+    target = (Join-Path $codexSkills "frontend-design")
+    backup = (Copy-SkillFolder -SkillName "frontend-design" -DestinationBase $codexSkills -BackupBase $backupPath)
+  }
+  $receipt.installedSkills += @{
+    kind = "directory"
+    tool = "claude"
+    name = "frontend-design"
+    target = (Join-Path $claudeSkills "frontend-design")
+    backup = (Copy-SkillFolder -SkillName "frontend-design" -DestinationBase $claudeSkills -BackupBase $backupPath)
+  }
+  $receipt.installedSkills += @{
+    kind = "directory"
+    tool = "codex"
+    name = "design-elevation"
+    target = (Join-Path $codexSkills "design-elevation")
+    backup = (Copy-SkillFolder -SkillName "design-elevation" -DestinationBase $codexSkills -BackupBase $backupPath)
+  }
+  $receipt.installedSkills += @{
+    kind = "directory"
+    tool = "claude"
+    name = "design-elevation"
+    target = (Join-Path $claudeSkills "design-elevation")
+    backup = (Copy-SkillFolder -SkillName "design-elevation" -DestinationBase $claudeSkills -BackupBase $backupPath)
   }
   $receipt.installedSkills += @{
     kind = "directory"
