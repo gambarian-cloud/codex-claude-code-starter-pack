@@ -2,10 +2,13 @@
 
 Decision-grade research skill for Codex and Claude Code.
 
+Project-aware, contradiction-driven, benchmarked deep research for real decisions.
+
 Use it when a question is important enough that a shallow answer is dangerous.
 
 ## What it does
 
+- runs a short framing preflight when the research path is still fuzzy
 - locks the real decision before research starts
 - reads local project context when the answer must fit the workspace
 - separates official truth, implementation truth, field evidence, and adversarial evidence
@@ -20,10 +23,12 @@ Use it when a question is important enough that a shallow answer is dangerous.
 - market maps and source-of-truth memos
 - adopt / experiment / watch / reject decisions
 
-## Why it is good
+## Why it stands out
 
 - it does not let search results masquerade as evidence
 - it does not let sales pages decide the answer
+- it does not ignore project context and answer the wrong question
+- it does not skip framing when the research path is still unclear
 - it does not stop at a summary with no recommendation
 - it produces research another operator can review and defend
 
@@ -47,7 +52,14 @@ Use it when a question is important enough that a shallow answer is dangerous.
 
 `adopt now`
 
-Benchmarked against:
+Benchmark result:
 
 - built-in Codex deep-research
 - external public deep-research workflow
+
+This project-owned skill won on:
+
+- source discipline
+- contradiction-aware synthesis
+- decision quality
+- recommendation usefulness
