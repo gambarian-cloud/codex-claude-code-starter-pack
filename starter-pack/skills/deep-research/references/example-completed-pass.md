@@ -1,3 +1,17 @@
+---
+question: "What is the best current approach for sharing reusable agent workflow instructions across Codex and Claude Code?"
+date: "2026-03-21"
+depth: deep
+decision: adopt
+confidence: high
+source_count: 5
+recommended_option: "Repo-owned canonical skill pack plus synced overlays"
+coverage_gaps:
+  - "YouTube not checked (low relevance)"
+  - "Reddit not checked (low relevance)"
+  - "Telegram, X, Facebook, Discord not checked (low relevance)"
+---
+
 # Example Completed Pass
 
 Use this file as a calibration target for structure and decision quality. It is intentionally short and illustrative, not exhaustive.

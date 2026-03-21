@@ -86,6 +86,25 @@ Every contradiction must map to a decision impact:
 
 Update incrementally. Do not wait until the end to write the first synthesis.
 
+Start the file with YAML front matter so the final report stays human-readable but is still easy for agents or simple tooling to parse.
+
+Use this minimal shape:
+
+```yaml
+---
+question: ""
+date: ""
+depth: standard|deep|long-run
+decision: adopt|experiment|watch|reject|not-enough-evidence
+confidence: low|medium|medium-high|high
+source_count: 0
+recommended_option: ""
+coverage_gaps: []
+---
+```
+
+The front matter is the machine-readable summary. Do not create a separate mandatory `07_decision.json` unless a workflow has a proven need for it.
+
 The final report should preserve:
 
 - the serious options compared when relevant

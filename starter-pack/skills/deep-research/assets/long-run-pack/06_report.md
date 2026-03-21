@@ -1,3 +1,14 @@
+---
+question: ""
+date: ""
+depth: standard|deep|long-run
+decision: adopt|experiment|watch|reject|not-enough-evidence
+confidence: low|medium|medium-high|high
+source_count: 0
+recommended_option: ""
+coverage_gaps: []
+---
+
 # Report
 
 ## Options Compared
