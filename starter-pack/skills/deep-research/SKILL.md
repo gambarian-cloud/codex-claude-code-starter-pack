@@ -126,6 +126,27 @@ When the question is about agent tools, workflow systems, or ecosystem reuse, ma
 - `memory`: auto or file-based durable context layers
 - `adjacent control layers`: hooks, subagents, plugins, or marketplace packaging when material
 
+## Project context intake
+
+Use this when the research is being done inside a real workspace and the answer is meant to influence that project. Skip it for generic public research that is not tied to a local project.
+
+Before web research, read a small local context set. Read only 2 to 5 files that define project reality, such as:
+
+- `AGENTS.md` or equivalent local operating rules
+- `PRD.md` or equivalent product source of truth
+- the active research memo, benchmark packet, or planning doc when relevant
+- one domain-specific config or source-of-truth file if it materially constrains the decision
+
+Write down:
+
+- what project this research is for
+- what decision this research is supposed to unblock
+- local constraints and non-goals
+- who will consume the output
+- the rewritten project-aware version of the research question
+
+Do not turn this into a full repo audit. The goal is to align the research to project reality before gathering outside evidence.
+
 ## Workflow
 
 0. Run an optional framing preflight when the path is unclear.
