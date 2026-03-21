@@ -128,6 +128,37 @@ When the question is about agent tools, workflow systems, or ecosystem reuse, ma
 
 ## Workflow
 
+0. Run an optional framing preflight when the path is unclear.
+
+Use this only when the user knows the goal but the research framing is still fuzzy. Skip it when the question is already well locked.
+
+In one short pass:
+
+- state the goal in one sentence
+- state the main constraint in one sentence
+- list 2 to 4 realistic research framings
+- give one tradeoff for each framing
+- choose the framing that best fits the decision
+- rewrite the final research question before starting the real pass
+
+Typical framings:
+
+- decision memo
+- workflow or layer analysis
+- vendor or tool comparison
+- market map or inventory
+- risk-first memo
+- procurement or compliance memo
+
+Output only:
+
+- chosen framing
+- rejected framings
+- rewritten research question
+- first research step
+
+Do not let this preflight turn into a second research pass. It exists only to choose the right path before evidence gathering.
+
 1. Lock the research question.
 
 Write down:
