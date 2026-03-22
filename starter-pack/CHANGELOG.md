@@ -1,5 +1,23 @@
 # Changelog
 
+## v0.6.7 - 2026-03-22
+
+Hebrew PDF utility baseline pass.
+
+Added:
+
+- shared `hebrew-pdf-to-markdown` skill for Codex and Claude Code
+
+Changed:
+
+- default install now includes the general Hebrew PDF to Markdown utility
+- verification now checks the new Hebrew PDF skill
+- docs now explain that this is an advanced document utility and works best when Python, PyMuPDF, and Pillow are available
+
+Not added:
+
+- `hebrew-medical-pdf-to-markdown` was kept out of the public default bundle for now because it is more sensitive and high-stakes than the general document utility
+
 ## v0.6.6 - 2026-03-19
 
 Design elevation baseline pass.

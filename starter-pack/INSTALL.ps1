@@ -8,7 +8,7 @@
 
 $ErrorActionPreference = "Stop"
 
-$script:StarterPackVersion = "0.6.6"
+$script:StarterPackVersion = "0.6.7"
 $script:StarterPackRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
 $script:AssetsRoot = Join-Path $script:StarterPackRoot "assets"
 $script:SkillsRoot = Join-Path $script:StarterPackRoot "skills"
@@ -349,6 +349,22 @@ $receipt.installedSkills += @{
   name = "presentations"
   target = (Join-Path $claudeSkills "presentations")
   backup = (Copy-SkillFolder -SkillName "presentations" -DestinationBase $claudeSkills -BackupBase $backupPath)
+}
+
+Write-Step "Installing document utility skill"
+$receipt.installedSkills += @{
+  kind = "directory"
+  tool = "codex"
+  name = "hebrew-pdf-to-markdown"
+  target = (Join-Path $codexSkills "hebrew-pdf-to-markdown")
+  backup = (Copy-SkillFolder -SkillName "hebrew-pdf-to-markdown" -DestinationBase $codexSkills -BackupBase $backupPath)
+}
+$receipt.installedSkills += @{
+  kind = "directory"
+  tool = "claude"
+  name = "hebrew-pdf-to-markdown"
+  target = (Join-Path $claudeSkills "hebrew-pdf-to-markdown")
+  backup = (Copy-SkillFolder -SkillName "hebrew-pdf-to-markdown" -DestinationBase $claudeSkills -BackupBase $backupPath)
 }
 
 $receipt.installedSkills += @{

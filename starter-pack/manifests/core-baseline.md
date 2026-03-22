@@ -59,12 +59,19 @@ Install for `Codex` only:
 
 - `model-routing`
 
+Also install for both tools:
+
+- `presentations`
+- `hebrew-pdf-to-markdown`
+
 Skill sources:
 
 - `systematic-debugging`, `verification-before-completion`, `using-git-worktrees` come from [obra/superpowers](https://github.com/obra/superpowers)
 - `brainstorming`, `writing-plans`, `executing-plans` are adapted from practitioner planning patterns
 - `deep-research` is a cross-cutting synthesis workflow promoted from our Signal Scout research passes
 - `model-routing` is a Codex-native skill from [openai/skills](https://github.com/openai/skills)
+- `presentations` is a shared output skill for decks and slide workflows
+- `hebrew-pdf-to-markdown` is an advanced utility skill for source-faithful Hebrew scanned PDF transcription when Python, PyMuPDF, and Pillow are available
 
 Install paths:
 
@@ -73,7 +80,7 @@ Install paths:
 
 Why this matters:
 
-- this gives planning, research synthesis, implementation discipline, debugging, verification, and safe parallel work
+- this gives planning, research synthesis, implementation discipline, debugging, verification, safe parallel work, plus a small utility layer for presentations and Hebrew scanned PDF transcription
 
 ## 3. Claude Code safety defaults
 

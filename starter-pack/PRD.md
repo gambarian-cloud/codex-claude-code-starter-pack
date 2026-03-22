@@ -59,6 +59,7 @@ The core baseline always includes:
 
 - global instruction files for `Codex` and `Claude Code`
 - core workflow skills for planning, deep research, implementation, debugging, verification, and safe parallel work
+- a small utility layer for presentations and scanned Hebrew PDF to Markdown work
 - Claude Code safety defaults for secrets
 - a small MCP layer:
   - `Context7`
@@ -133,7 +134,7 @@ This folder should contain:
 - `CHANGELOG.md`
 - `assets/codex/AGENTS.md` - template for Codex instruction file
 - `assets/claude/CLAUDE.md` - template for Claude Code instruction file
-- `skills/` - all bundled skill files (17 skills)
+- `skills/` - all bundled skill files (18 skills)
 - `manifests/core-baseline.md`
 - `manifests/builder-default.md`
 - `profiles/general-use.md`

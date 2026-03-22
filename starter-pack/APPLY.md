@@ -57,14 +57,15 @@ Available profiles:
 3. Installs the core skills from `skills/`.
 4. Adds `model-routing` for Codex.
 5. Adds presentation help for both tools.
-6. Adds `test-driven-development`, `frontend-design`, `design-elevation`, `web-design-guidelines`, `playwright`, and `vercel-deploy` for builder profiles.
-7. Adds `react-best-practices` for the websites profile.
-8. Merges Claude Code deny rules into `settings.json`.
-9. Updates Codex `config.toml` with the baseline MCP servers.
-10. Adds Claude MCP servers through the Claude CLI if the CLI is available.
-11. Saves backups to `%USERPROFILE%\.starter-pack\backups\...`.
-12. Writes an install receipt to `%USERPROFILE%\.starter-pack\install-receipt.json`.
-13. Runs `VERIFY.ps1` unless you skip it.
+6. Adds the advanced `hebrew-pdf-to-markdown` utility for both tools.
+7. Adds `test-driven-development`, `frontend-design`, `design-elevation`, `web-design-guidelines`, `playwright`, and `vercel-deploy` for builder profiles.
+8. Adds `react-best-practices` for the websites profile.
+9. Merges Claude Code deny rules into `settings.json`.
+10. Updates Codex `config.toml` with the baseline MCP servers.
+11. Adds Claude MCP servers through the Claude CLI if the CLI is available.
+12. Saves backups to `%USERPROFILE%\.starter-pack\backups\...`.
+13. Writes an install receipt to `%USERPROFILE%\.starter-pack\install-receipt.json`.
+14. Runs `VERIFY.ps1` unless you skip it.
 
 ### Optional flags
 
@@ -146,7 +147,12 @@ New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.codex\skills\presen
 New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.claude\skills\presentations" | Out-Null
 Copy-Item ".\skills\presentations\SKILL.md" "$env:USERPROFILE\.codex\skills\presentations\SKILL.md" -Force
 Copy-Item ".\skills\presentations\SKILL.md" "$env:USERPROFILE\.claude\skills\presentations\SKILL.md" -Force
+
+Copy-Item ".\skills\hebrew-pdf-to-markdown" "$env:USERPROFILE\.codex\skills" -Recurse -Force
+Copy-Item ".\skills\hebrew-pdf-to-markdown" "$env:USERPROFILE\.claude\skills" -Recurse -Force
 ```
+
+If you want to use `hebrew-pdf-to-markdown`, it works best when Python plus `PyMuPDF` (`fitz`) and `Pillow` are available on the machine.
 
 ### Step 4: add Claude Code safety rules
 

@@ -20,6 +20,7 @@ What the script checks:
 - Codex `config.toml`
 - all core skills in both tools
 - `presentations` in both tools
+- `hebrew-pdf-to-markdown` in both tools
 - `model-routing` in Codex
 - `test-driven-development`, `frontend-design`, `design-elevation`, `web-design-guidelines`, `playwright`, and `vercel-deploy` for builder profiles
 - `react-best-practices` for the websites profile
@@ -63,6 +64,8 @@ foreach ($skill in $coreSkills) {
 
 "{0}  Claude presentations" -f ($(if (Test-Path "$env:USERPROFILE\.claude\skills\presentations\SKILL.md") { "OK" } else { "MISSING" }))
 "{0}  Codex  presentations" -f ($(if (Test-Path "$env:USERPROFILE\.codex\skills\presentations\SKILL.md") { "OK" } else { "MISSING" }))
+"{0}  Claude hebrew-pdf-to-markdown" -f ($(if (Test-Path "$env:USERPROFILE\.claude\skills\hebrew-pdf-to-markdown\SKILL.md") { "OK" } else { "MISSING" }))
+"{0}  Codex  hebrew-pdf-to-markdown" -f ($(if (Test-Path "$env:USERPROFILE\.codex\skills\hebrew-pdf-to-markdown\SKILL.md") { "OK" } else { "MISSING" }))
 ```
 
 ### Check 3: profile extras

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Hebrew PDF OCR"
+  short_description: "Hebrew PDFs to Markdown OCR"
+  default_prompt: "Use $hebrew-pdf-to-markdown to convert a scanned Hebrew PDF into source-faithful Markdown with RTL-safe OCR and validation."

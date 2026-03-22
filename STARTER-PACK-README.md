@@ -22,6 +22,7 @@ Open `PASTE-INTO-CODEX-OR-CLAUDE-INSTALL.txt`, copy the text, and paste it into 
 - calm baseline instructions for Codex and Claude Code
 - planning, deep research, implementation, debugging, verification, and worktree skills
 - presentation help for classroom, business, and simple personal decks
+- an advanced Hebrew PDF to Markdown utility for scanned Hebrew documents
 - build-ready skills for first sites and apps
 - bold frontend direction so the first version does not start from generic AI aesthetics
 - design elevation so a working first draft gets a real refinement pass before you stop

@@ -16,6 +16,7 @@ This matters: the agent works inside the folder you opened.
 - Plan and build me a simple website for my business. Start with a plan, then build it step by step.
 - Plan and build me a simple app for tracking tasks. Start with a plan, then build it step by step.
 - Plan and make me a short presentation for parents night at school. Start with a clear outline, then build the slides.
+- Help me convert this scanned Hebrew PDF into Markdown without translating or summarizing it. Keep page structure and uncertainties.
 - Make me a simple landing page. Explain what you are doing in plain language.
 - Make me a small app and show me how to run, preview, and publish it.
 - Build me a simple website. Start with a plan, use frontend-design for the first version, then do a design-elevation pass before finalizing it.

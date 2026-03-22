@@ -34,7 +34,7 @@ That prompt tells the agent to find the local installer, run it, run verificatio
 |------|-------------|
 | Global instruction files | Short behavior rules that make both tools calmer and more structured |
 | Workflow skills | Planning, deep research, implementation, debugging, verification, and worktree discipline |
-| Creation skills | Presentation help plus build-ready support for first websites and apps, including bold frontend direction, design elevation, UI review, browser checking, deploy guidance, and React guidance when the project needs it |
+| Creation skills | Presentation help plus build-ready support for first websites and apps, including bold frontend direction, design elevation, UI review, browser checking, deploy guidance, React guidance when the project needs it, and an advanced Hebrew PDF to Markdown utility skill |
 | Safety deny rules | Blocks Claude Code from casually reading common secret locations |
 | Context7 MCP | Up-to-date library docs on demand |
 | Sequential Thinking MCP | Step-by-step reasoning for hard problems |
@@ -77,6 +77,7 @@ starter-pack/
     verification-before-completion/
     using-git-worktrees/
     presentations/
+    hebrew-pdf-to-markdown/
     model-routing/
     test-driven-development/
     frontend-design/
