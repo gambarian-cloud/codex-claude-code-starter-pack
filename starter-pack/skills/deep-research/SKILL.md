@@ -91,6 +91,8 @@ When the question touches privacy, retention, residency, liability, compliance, 
 
 If a recommendation depends on a vendor's privacy or compliance posture, at least one decisive claim must come from those operative documents, not just a marketing summary page.
 
+For legal or regulatory claims, distinguish primary materials (rule, statute, regulator guidance, enforcement release, court decision, no-action letter) from secondary commentary. Commentary may guide search, but it should not carry the top-line conclusion without the primary document.
+
 ### Decision-bearing numeric claims
 
 A numeric claim (tokens per second, benchmark score, price, bandwidth) may appear in the decision table or recommendation only if it meets one of these:
@@ -149,7 +151,7 @@ Do not turn this into a full repo audit. The goal is to align the research to pr
 
 ## Workflow
 
-Backbone principle: **discovery → classification → decision.** First find what exists. Then type and classify each candidate. Only then shortlist and decide. The classification step is the one most often skipped under pressure — do not skip it.
+Backbone principle: **discovery -> classification -> decision.** First find what exists. Then type and classify each candidate. Only then shortlist and decide. The classification step is the one most often skipped under pressure -> do not skip it.
 
 0. Run an optional framing preflight when the path is unclear.
 
@@ -210,6 +212,19 @@ If the question is about a domain ecosystem, skill landscape, or "what exists in
 
 Default to `landscape first` when the user asks what exists, what we missed, or whether a domain already has a real skill ecosystem.
 
+1.25 Differentiate before you broaden.
+
+For product, pack, workflow, or skill research, write a provisional differentiation thesis before broader search:
+
+- what is uniquely unsolved here?
+- what mature tools already solve well?
+- what should likely be recommended rather than built?
+- where does AI add real value: ingestion, synthesis, explanation, classification, or execution?
+- what user segment and repeated pain make this worth building at all?
+- what would still be valuable if the AI layer disappeared?
+
+Do not keep a build-shaped thesis just because it is feasible. If the strongest answer is "recommend existing tools and build only the interpretation, control, or safety layer," say so.
+
 2. Decompose and build a search plan.
 
 Before browsing anything:
@@ -219,6 +234,7 @@ Before browsing anything:
 - for each sub-question, draft 2-4 search queries across different source classes (official, implementation, field/social, adversarial)
 - this produces a query pack of 10-25 planned searches; not all must run, but the plan must exist before the first search
 - for `long-run`, write the query pack to `02_queries.md`
+- if the workflow depends on heterogeneous artifacts (PDFs, screenshots, CSVs, exports, OCR, vendor-specific files), dedicate one sub-question to format diversity, format drift, importer fragility, and parser failure modes
 
 For domain, ecosystem, or skills-market scans, make the query pack explicitly two-pass:
 
@@ -249,6 +265,14 @@ For each candidate or claim, check:
 - for recurring artifacts or mandatory protocols, what the likely scale breakpoint is (entry count, review load, or recurring read burden) before the system becomes hard to follow or reliably execute
 
 If the design requires an agent or operator to re-read the same growing artifact every session, estimate the recurring read burden. Use rough numbers when needed, but do not hide behind "it gets messy later" without naming a scale risk.
+
+For high-stakes or calculation-heavy topics, explicitly separate:
+
+- what the model may safely parse, classify, summarize, or explain
+- what must remain deterministic code, formulas, rules, or audited calculations
+- what outputs must be reproducible outside the model
+
+If the model is allowed to originate decision-bearing numbers, transformed user values, or ranked recommendations, say so explicitly and justify why.
 
 For privacy, compliance, or procurement questions, compare each serious option separately on:
 
@@ -444,7 +468,7 @@ Use:
 - `Decision / Outcome`
 - `Recommended Next Move`
 - `Best Argument Against This Recommendation`
-- `What Should Be Removed Or Simplified` — when the recommendation involves a protocol or multi-step design, explicitly ask: is this too heavy for v1? What can be cut without losing core value? What will die from ceremony fatigue?
+- `What Should Be Removed Or Simplified` -> when the recommendation involves a protocol or multi-step design, explicitly ask: is this too heavy for v1? What can be cut without losing core value? What will die from ceremony fatigue?
 - `Source Layer Coverage`
 - `Biggest Blind Spot / Missed Signals`
 
@@ -459,6 +483,15 @@ If the pass recommends adoption, also preserve:
 - `Prerequisites`
 - `Blast Radius`
 - `Rollback / Escape Hatch`
+
+For high-stakes recommendations, also preserve:
+
+- `Differentiation Thesis`
+- `Deterministic vs Generative Boundary`
+- `Release Gates` with measurable go/no-go thresholds when possible
+- `Language Policy` including safe verbs, forbidden verbs, escalation triggers, `not for` lists, and fail-closed phrases such as `unknown`, `cannot determine`, or `insufficient evidence`
+- `User Misunderstanding Risk`
+- `Segment Viability / Abandonment Risk`
 
 If the pass is inconclusive, say so explicitly instead of forcing an adoption verdict.
 
@@ -486,6 +519,7 @@ For `deep` and `long-run` passes, also include a **Self-Evaluation** section:
 - community/social source count (YouTube, Reddit, HN, X, Telegram, etc.)
 - contradictions found and resolution status
 - coverage gaps logged
+- decisive primary/operative sources versus weaker directional sources
 - overall confidence: high / moderate / low
 
 9. Verify claims against sources.
