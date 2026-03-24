@@ -149,6 +149,8 @@ Do not turn this into a full repo audit. The goal is to align the research to pr
 
 ## Workflow
 
+Backbone principle: **discovery → classification → decision.** First find what exists. Then type and classify each candidate. Only then shortlist and decide. The classification step is the one most often skipped under pressure — do not skip it.
+
 0. Run an optional framing preflight when the path is unclear.
 
 Use this only when the user knows the goal but the research framing is still fuzzy. Skip it when the question is already well locked.
@@ -201,6 +203,13 @@ If the question touches privacy, compliance, procurement, or geography, split th
 - sovereignty / jurisdiction
 - buyer-facing controls or procurement requirements
 
+If the question is about a domain ecosystem, skill landscape, or "what exists in this space," also lock which output mode is needed:
+
+- `landscape first`: inventory the real ecosystem before deciding what is adoptable
+- `adoption first`: shortlist only immediately usable options, but still log larger ecosystems that materially shape the market
+
+Default to `landscape first` when the user asks what exists, what we missed, or whether a domain already has a real skill ecosystem.
+
 2. Decompose and build a search plan.
 
 Before browsing anything:
@@ -209,6 +218,22 @@ Before browsing anything:
 - for each sub-question, draft 2-4 search queries across different source classes (official, implementation, field/social, adversarial)
 - this produces a query pack of 10-25 planned searches; not all must run, but the plan must exist before the first search
 - for `long-run`, write the query pack to `02_queries.md`
+
+For domain, ecosystem, or skills-market scans, make the query pack explicitly two-pass:
+
+- `landscape pass`: broad ecosystem and naming queries
+- `adoption pass`: narrow workflow and installability queries
+
+The `landscape pass` should search not only by task, but also by:
+
+- domain noun + `skills`
+- domain noun + `agent`
+- domain noun + `workspace`
+- domain noun + `framework`
+- domain noun + `copilot`
+- domain noun + `openclaw`, `claude`, `codex`, `gemini`, or other relevant agent/runtime names
+
+Do not rely only on workflow-level queries like `differential diagnosis skill` or `drug interaction skill`. Those find practical leaves, but often miss the big ecosystem trunks.
 
 3. Build the comparison frame before reading.
 
@@ -237,6 +262,26 @@ If this is a tool or ecosystem comparison, also classify each serious option as 
 - community catalog
 - workflow framework
 - translation or sync layer
+
+If the pass is about skills, agents, or domain ecosystems, also classify each option as one of:
+
+- installable skill pack
+- broader skill library or ecosystem
+- agent platform or workspace
+- retrieval / RAG / knowledge-graph infrastructure
+- research artifact or paper-backed prototype
+
+Do this classification before ranking practical usefulness. A platform, skill pack, and backend library are not interchangeable findings.
+
+### Candidate typing gate
+
+This is a hard gate. Do not proceed to shortlisting or ranking until every serious candidate has a type assigned from the classification above.
+
+- No shortlist before candidate typing.
+- No ranking before category assignment.
+- No "best option" until entity types are separated.
+
+If a candidate does not fit any existing type, create a new type and log it. Do not force-fit candidates into wrong categories to move faster.
 
 ### Candidate reality check
 
@@ -292,6 +337,18 @@ After the official and implementation lanes, run a dedicated community and pract
 
 This is a separate pass from blog-based field evidence. Platform-native artifacts often reveal workflow patterns that blogs miss.
 
+4.5. Run conditional ecosystem passes when the question is a domain or ecosystem scan.
+
+These passes are mandatory for domain ecosystem scans and landscape-first passes. Skip them for standard tool comparisons or single-vendor questions.
+
+**Distribution and installability pass.** Before concluding that something "exists," check where it actually ships. See [references/distribution-registries.md](references/distribution-registries.md) for the checklist.
+
+**Domain-native query pass.** Search using the domain's own vocabulary, not just "agent" / "skill" / "copilot." See [references/domain-ecosystem-scans.md](references/domain-ecosystem-scans.md) for guidance.
+
+**Enterprise and commercial pass** (conditional). When the question is about ecosystem shape, market landscape, or "what exists," check the enterprise/commercial layer. Vendor pages, press releases, analyst reports, institutional deployments. See [references/domain-ecosystem-scans.md](references/domain-ecosystem-scans.md).
+
+**Frontier and preprint pass** (conditional, research-heavy domains only). When the domain is research-active (biomedical, ML, scientific computing), check arXiv, bioRxiv, medRxiv, conference proceedings, and supplementary code. See [references/domain-ecosystem-scans.md](references/domain-ecosystem-scans.md).
+
 5. Extract evidence, not vibes.
 
 For every important claim, record:
@@ -302,7 +359,7 @@ For every important claim, record:
 - why the source is credible or limited
 - whether the claim is `verified`, `partially verified`, `unverified`, or `marketing only`
 
-6. Chase contradictions and map them to decisions.
+6. Chase contradictions and map them to decisions. This step is mandatory, not optional.
 
 - go closer to the primary artifact
 - prefer newer evidence when the topic is time-sensitive
@@ -335,6 +392,15 @@ However, minimum floors still apply as a safety net:
 
 If the floor is met but saturation is not reached, keep searching. If saturation is reached below the floor, check whether a source class is missing before stopping.
 
+For landscape-first passes, do not down-rank or drop a finding only because it is not immediately installable in the current project. First capture the ecosystem map, then decide which findings are:
+
+- `adopt now`
+- `experiment`
+- `watch`
+- `not directly usable`
+
+An ecosystem scan fails if it only returns the directly adoptable leaves and misses the larger structures that explain where the market actually is.
+
 8. Synthesize into a decision memo.
 
 Before writing the decision sections, state your primary analytical thesis in 1-3 sentences. This is your own conclusion from the evidence, not a restatement of any single source. The thesis sets the frame for the rest of the memo. If you cannot state a thesis, the evidence may not be saturated yet.
@@ -353,6 +419,12 @@ Use:
 - `Best Argument Against This Recommendation`
 - `Source Layer Coverage`
 - `Biggest Blind Spot / Missed Signals`
+
+For landscape-first passes, also include:
+
+- `Ecosystem Map`
+- `Practical Shortlist`
+- `What We Missed In The First Pass`
 
 If the pass recommends adoption, also preserve:
 
@@ -442,5 +514,7 @@ A recommendation must not rely on MSRP if the street price is materially differe
 - Do not treat a YouTube walkthrough, conference talk, or creator demo as proof of real repeated adoption by itself.
 - Do not cite README superiority claims as settled fact.
 - Do not stop at "many people mention it"; find the backing artifact.
+- Do not let an `adopt-now` filter erase the existence of broader ecosystems, platforms, or infrastructure layers.
+- Do not mix up `skill pack`, `skill ecosystem`, `agent platform`, and `RAG / backend infrastructure`.
 - Do not hide unresolved contradictions.
 - Do not leave the result as a brainstorm. End with a decision.

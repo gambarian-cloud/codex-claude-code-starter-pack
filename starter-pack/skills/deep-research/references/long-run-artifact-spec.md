@@ -133,3 +133,27 @@ When the recommendation touches enterprise adoption, privacy, compliance, or pro
 - disclosure or transparency obligations
 
 The report must be self-contained: a reader should understand the full argument without opening supporting files. Claim status belongs in the report evidence table or a separate claim log, not on the source row.
+
+## Optional files
+
+Add these when the pass scope requires them. They are not mandatory. Number sequentially from where the required files end.
+
+### `07_decision.md`
+
+Canonical adopt/experiment/watch/reject table when the pass evaluates multiple candidates. Use when the front matter in `06_report.md` is not enough to capture per-candidate decisions.
+
+### `08_watchlist.md`
+
+Repos, tools, or ecosystem signals to monitor after the pass ends. Include cadence (weekly/monthly) and trigger conditions for re-evaluation.
+
+### `09_pack-shape.md`
+
+Recommended pack architecture when the pass is designing a domain pack. Define core vs optional vs separate-later vs reject boundaries.
+
+### `10_cross-review.md`
+
+Arbitration layer when multiple independent passes exist (e.g., parallel Codex and Claude passes). Capture:
+- where the passes agree
+- where they disagree
+- merged decision per item
+- what neither pass covered
