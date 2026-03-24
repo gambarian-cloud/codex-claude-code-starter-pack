@@ -246,6 +246,9 @@ For each candidate or claim, check:
 - what procedural delta it adds
 - what it costs in time, risk, or permissions
 - what breaks or stays painful if we do nothing
+- for recurring artifacts or mandatory protocols, what the likely scale breakpoint is (entry count, review load, or recurring read burden) before the system becomes hard to follow or reliably execute
+
+If the design requires an agent or operator to re-read the same growing artifact every session, estimate the recurring read burden. Use rough numbers when needed, but do not hide behind "it gets messy later" without naming a scale risk.
 
 For privacy, compliance, or procurement questions, compare each serious option separately on:
 
@@ -319,6 +322,10 @@ When designing a workflow, protocol, or skill, check known skill ecosystems befo
 
 For decision-bearing conclusions, read at least 3-5 key sources in full when available. Do not rely only on search snippets, summaries, or extracted passages. Snippets are leads for discovery; decisive claims must come from full-text reading.
 
+For workflow, protocol, or agent-reliability questions, search at least one adjacent domain for transferable patterns when relevant. Good adjacent domains include incident management, DevOps, distributed systems, and project management.
+
+When the topic has active measurement literature, include benchmark studies, evaluation papers, or systematic comparisons in the evidence base. Do not create a new source tier for this; treat them as supporting evidence alongside the existing source model.
+
 For hardware, tool, or workflow comparisons: require at least one concrete practitioner setup description in `deep` and at least two in `long-run` when the ecosystem is active. A concrete setup means a specific person's actual hardware model, software stack, and workflow with enough detail to reproduce or evaluate. Forum threads, build logs, and "share your setup" posts are the strongest form of this evidence. If no concrete practitioner setup is found, log it as a critical coverage gap.
 
 For enterprise, privacy, compliance, or procurement questions: run a dedicated contract-and-policy pass before treating the official baseline as complete. Read the DPA, ToS, privacy/retention docs, abuse-monitoring docs, and any security or enterprise addenda you can access for each serious option.
@@ -373,10 +380,17 @@ For every important claim, record:
 After collecting evidence, run a dedicated adversarial search pass for each key design decision or recommendation. Search explicitly for:
 - "why X fails in practice"
 - "X problems", "X merge conflicts", "X protocol fatigue"
+- "X incident", "X postmortem", "X production failure"
 - real-world failure case studies, not just theoretical objections
 - compliance decay and ceremony fatigue when the recommendation involves multi-step protocols
 
 This is not the same as checking for "other opinions." It is a targeted search for failure modes of the thing you are about to recommend. If you cannot find failure evidence, log it as a coverage gap, not as proof that there are no failures.
+
+For multi-step mandatory protocols, estimate the per-step reliability and the compound chance that all required steps actually happen. Use rough ranges when exact measurement is unavailable. If the protocol only works under unrealistic compliance assumptions, flag it as a structural risk.
+
+For append-only artifacts, recurring review rituals, or growing worklogs, estimate the breakpoint where quality or reliability degrades. Name a number or range when possible instead of saying only that it will "stop scaling."
+
+Every material structural criticism must include at least one concrete alternative, mitigation, or simplification path. Criticism without an alternative is incomplete analysis.
 
 Every contradiction must resolve to a decision impact, not just exist in a log:
 
