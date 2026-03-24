@@ -314,6 +314,8 @@ Prefer:
 
 Do not inflate source count with repeats. Two strong sources beat ten paraphrases.
 
+For decision-bearing conclusions, read at least 3-5 key sources in full when available. Do not rely only on search snippets, summaries, or extracted passages. Snippets are leads for discovery; decisive claims must come from full-text reading.
+
 For hardware, tool, or workflow comparisons: require at least one concrete practitioner setup description in `deep` and at least two in `long-run` when the ecosystem is active. A concrete setup means a specific person's actual hardware model, software stack, and workflow with enough detail to reproduce or evaluate. Forum threads, build logs, and "share your setup" posts are the strongest form of this evidence. If no concrete practitioner setup is found, log it as a critical coverage gap.
 
 For enterprise, privacy, compliance, or procurement questions: run a dedicated contract-and-policy pass before treating the official baseline as complete. Read the DPA, ToS, privacy/retention docs, abuse-monitoring docs, and any security or enterprise addenda you can access for each serious option.

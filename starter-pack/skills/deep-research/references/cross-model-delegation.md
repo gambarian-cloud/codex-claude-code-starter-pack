@@ -55,6 +55,22 @@ Include a model performance comparison:
 
 This table helps future passes choose which models to delegate to based on domain and question type.
 
+## Same-model parallel subagents
+
+For broad `long-run` passes where the sub-question count is high (5+), you may also parallelize within a single agent environment by launching research subagents for different sub-questions simultaneously.
+
+This is not cross-model delegation — it is same-model parallelism using Claude Code's Agent tool or similar. Each subagent searches and returns findings for its sub-questions; the main session synthesizes.
+
+Use when:
+- The topic has 5+ independent sub-questions that do not depend on each other
+- Single-threaded search would take unreasonably long
+- Coverage breadth matters more than deep sequential reasoning
+
+Do not use when:
+- Sub-questions depend on each other's results
+- The topic needs iterative deepening rather than breadth
+- The main agent can handle the scope in reasonable time
+
 ## Costs and risks
 
 - Expensive in time and tokens
