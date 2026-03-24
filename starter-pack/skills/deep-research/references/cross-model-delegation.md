@@ -17,7 +17,7 @@ Do not use:
 
 ## How it works
 
-1. Complete your own research pass first (steps 1-7 in the main skill)
+1. Complete your own research pass first using the main skill workflow
 2. Design a cross-model prompt that:
    - Lists what is ALREADY KNOWN (prevents re-discovery waste)
    - Specifies 4-6 categories of desired output
@@ -39,7 +39,7 @@ Do not use:
 
 ## Output
 
-Save as a numbered artifact: `15_external-deep-research-cross-review.md` (or next available number).
+Save as a numbered artifact. Prefer `10_cross-review.md` when that slot is free; otherwise use the next sequential artifact number.
 
 Include a model performance comparison:
 
@@ -59,7 +59,7 @@ This table helps future passes choose which models to delegate to based on domai
 
 For broad `long-run` passes where the sub-question count is high (5+), you may also parallelize within a single agent environment by launching research subagents for different sub-questions simultaneously.
 
-This is not cross-model delegation — it is same-model parallelism using Claude Code's Agent tool or similar. Each subagent searches and returns findings for its sub-questions; the main session synthesizes.
+This is not cross-model delegation -> it is same-model parallelism using Claude Code's Agent tool or similar. Each subagent searches and returns findings for its sub-questions; the main session synthesizes.
 
 Use when:
 - The topic has 5+ independent sub-questions that do not depend on each other
@@ -76,4 +76,4 @@ Do not use when:
 - Expensive in time and tokens
 - Creates dependency on external infrastructure
 - Model outputs need the same verification as any other source (step 9)
-- Do not treat cross-model agreement as proof — models share training data biases
+- Do not treat cross-model agreement as proof -> models share training data biases

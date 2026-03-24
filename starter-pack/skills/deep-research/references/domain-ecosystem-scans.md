@@ -57,10 +57,10 @@ Check:
 Only needed for `deep` and `long-run` passes in research-heavy domains (biomedical, ML, scientific computing, materials science, etc.).
 
 Check:
-- **arXiv** / **bioRxiv** / **medRxiv** — preprint search
-- **Conference proceedings** — NeurIPS, ICLR, ISMB, AMIA, RECOMB, ACL, and domain-specific conferences
+- **arXiv** / **bioRxiv** / **medRxiv** -> preprint search
+- **Conference proceedings** -> NeurIPS, ICLR, ISMB, AMIA, RECOMB, ACL, and domain-specific conferences
 - **Lab blogs and institutional announcements**
-- **Supplementary code** — tools distributed as paper supplements rather than polished repos
+- **Supplementary code** -> tools distributed as paper supplements rather than polished repos
 
 ### What this answers
 "What is coming in 3-12 months" and catches tools distributed as supplementary code rather than polished repos. The preprint-to-repo pipeline runs 3-12 months in research-active fields.

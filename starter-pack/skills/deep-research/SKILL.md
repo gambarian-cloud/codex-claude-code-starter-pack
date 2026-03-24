@@ -344,7 +344,7 @@ This is a separate pass from blog-based field evidence. Platform-native artifact
 
 4.5. Run conditional ecosystem passes when the question is a domain or ecosystem scan.
 
-These passes are mandatory for domain ecosystem scans and landscape-first passes. Skip them for standard tool comparisons or single-vendor questions.
+For domain ecosystem scans and landscape-first passes, the distribution and domain-native query passes are required. The enterprise/commercial and frontier/preprint passes are conditional. Skip this whole block for standard tool comparisons or single-vendor questions.
 
 **Distribution and installability pass.** Before concluding that something "exists," check where it actually ships. See [references/distribution-registries.md](references/distribution-registries.md) for the checklist.
 
