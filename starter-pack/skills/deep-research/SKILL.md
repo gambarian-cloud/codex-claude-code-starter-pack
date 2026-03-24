@@ -215,6 +215,7 @@ Default to `landscape first` when the user asks what exists, what we missed, or 
 Before browsing anything:
 
 - break the question into 3-7 sub-questions that together cover the full decision
+- at least one sub-question must be adversarial: "what would make this fail?", "why does X not work in practice?", or "what are the known failure modes?" Do not treat this as optional or deferrable.
 - for each sub-question, draft 2-4 search queries across different source classes (official, implementation, field/social, adversarial)
 - this produces a query pack of 10-25 planned searches; not all must run, but the plan must exist before the first search
 - for `long-run`, write the query pack to `02_queries.md`
@@ -314,6 +315,8 @@ Prefer:
 
 Do not inflate source count with repeats. Two strong sources beat ten paraphrases.
 
+When designing a workflow, protocol, or skill, check known skill ecosystems before building from scratch. If the project has a skill catalog, watchlist, or known ecosystem list, search it first. A ready-made skill or tool in a known ecosystem is stronger evidence than a design invented from first principles.
+
 For decision-bearing conclusions, read at least 3-5 key sources in full when available. Do not rely only on search snippets, summaries, or extracted passages. Snippets are leads for discovery; decisive claims must come from full-text reading.
 
 For hardware, tool, or workflow comparisons: require at least one concrete practitioner setup description in `deep` and at least two in `long-run` when the ecosystem is active. A concrete setup means a specific person's actual hardware model, software stack, and workflow with enough detail to reproduce or evaluate. Forum threads, build logs, and "share your setup" posts are the strongest form of this evidence. If no concrete practitioner setup is found, log it as a critical coverage gap.
@@ -361,11 +364,19 @@ For every important claim, record:
 - why the source is credible or limited
 - whether the claim is `verified`, `partially verified`, `unverified`, or `marketing only`
 
-6. Chase contradictions and map them to decisions. This step is mandatory, not optional.
+6. Chase contradictions and run adversarial falsification. This step is mandatory, not optional.
 
 - go closer to the primary artifact
 - prefer newer evidence when the topic is time-sensitive
 - if conflict remains, keep both sides and state the uncertainty
+
+After collecting evidence, run a dedicated adversarial search pass for each key design decision or recommendation. Search explicitly for:
+- "why X fails in practice"
+- "X problems", "X merge conflicts", "X protocol fatigue"
+- real-world failure case studies, not just theoretical objections
+- compliance decay and ceremony fatigue when the recommendation involves multi-step protocols
+
+This is not the same as checking for "other opinions." It is a targeted search for failure modes of the thing you are about to recommend. If you cannot find failure evidence, log it as a coverage gap, not as proof that there are no failures.
 
 Every contradiction must resolve to a decision impact, not just exist in a log:
 
@@ -419,6 +430,7 @@ Use:
 - `Decision / Outcome`
 - `Recommended Next Move`
 - `Best Argument Against This Recommendation`
+- `What Should Be Removed Or Simplified` — when the recommendation involves a protocol or multi-step design, explicitly ask: is this too heavy for v1? What can be cut without losing core value? What will die from ceremony fatigue?
 - `Source Layer Coverage`
 - `Biggest Blind Spot / Missed Signals`
 
